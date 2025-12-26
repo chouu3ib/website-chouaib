@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Chouaib Lamraoui</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- خط عربي جميل -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- أيقونات Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Cairo', sans-serif;
+            background: linear-gradient(135deg, #e3f2fd, #ffffff, #bbdefb);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .card {
+            background: #ffffff;
+            width: 90%;
+            max-width: 420px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0, 90, 180, 0.2);
+            text-align: center;
+            padding: 30px 25px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 50px rgba(0, 90, 180, 0.3);
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #1e88e5;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        h1 {
+            margin: 10px 0 5px;
+            color: #0d47a1;
+            font-size: 26px;
+        }
+
+        .username {
+            color: #1e88e5;
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            color: #444;
+            font-size: 15px;
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .links a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            background: #1e88e5;
+            color: white;
+            padding: 12px;
+            border-radius: 12px;
+            margin: 10px 0;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .links a i {
+            margin-left: 8px;
+            font-size: 16px;
+        }
+
+        .links a:hover {
+            background: #1565c0;
+            transform: scale(1.05);
+        }
+
+        footer {
+            margin-top: 18px;
+            font-size: 12px;
+            color: #777;
+        }
+
+        @media (max-width: 400px) {
+            .card {
+                padding: 20px 15px;
+            }
+            h1 {
+                font-size: 22px;
+            }
+            .bio {
+                font-size: 14px;
+            }
+            .links a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- صورتك -->
+    <img src="profile.jpg" alt="Chouaib Lamraoui" class="profile-img">
+
+    <!-- اسمك -->
+    <h1>Chouaib Lamraoui</h1>
+    <div class="username">@Chouu3ib</div>
+
+    <!-- تعريف عنك -->
+    <p class="bio">
+        مرحبًا، أنا Chouaib Lamraoui.  
+        لاعب كرة قدم وهذه مواقع التواصل التي أتستخدمها.
+    </p>
+
+    <!-- روابطك -->
+    <div class="links">
+        <a href="https://t.me/Chouu3ib" target="_blank"><i class="fab fa-telegram"></i> Telegram</a>
+        <a href="https://www.instagram.com/o07sw" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="https://www.facebook.com/o07sw/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a>
+        <a href="https://snapchat.com/add/chouu3ib_002" target="_blank"><i class="fab fa-snapchat"></i> Snapchat</a>
+    </div>
+
+    <footer>
+        © 2025 Chouaib Lamraoui
+    </footer>
+
+</div>
+
+</body>
+</html>
